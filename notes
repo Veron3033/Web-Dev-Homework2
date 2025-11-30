@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk HW2</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+<div class="grid-wrapper">
+
+    <header id="header-id">
+        <nav>
+            <a href="#section1-id" class="btn">Past</a>
+            <a href="#section2-id" class="btn">Now</a>
+            <a href="#section3-id" class="btn">Future</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cyberpunk</h1>
+        <hr>
+        <div class="content-box">
+            <div class="article">
+                Cyberpunk: Edgerunners tells a standalone, 10-episode story about a street kid trying to survive
+                in a technology and body modification-obsessed city of the future. Having everything to lose,
+                he chooses to stay alive by becoming an edgerunner — a mercenary outlaw also known as a cyberpunk.
+            </div>
+
+            <div class="image">
+                <img src="4cca8bd39169ce15477c69579bfea219_2.jpg"
+                     alt="Cyberpunk: Edgerunners" width="312" height="318">
+            </div>
+        </div>
+
+        <h2>Story</h2>
+        <p>
+            In the aftermath of a personal tragedy, David Martinez chooses to take control of his own life by
+            becoming an edgerunner and entering the criminal underworld of Night City. Cyberpunk: Edgerunners
+            asks just how far you can go to overcome your physical and emotional limits.
+        </p>
+
+        <h3>Creators</h3>
+        <p>
+            Cyberpunk: Edgerunners is an award-winning Netflix anime created in collaboration between CD PROJEKT RED
+            and Studio TRIGGER. Known for works including Little Witch Academia and Promare, they brought Night City
+            to life with style and fire.
+        </p>
+
+        <pre>Visit <a href="https://www.cyberpunk.net/en/edgerunners">official site</a> for more information</pre>
+    </main>
+
+    <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Night City News: Chrome prices are rising. More implants, fewer morals.</p>
+    </aside>
+
+    <div class="ad ad-primary">
+        <h2>Ad</h2>
+        <img src="https://placekitten.com/320/200" alt="cyber cat">
+        <p>Upgrade your cyberware today — meow-compatible!</p>
+    </div>
+
+    <div class="ad ad-secondary">
+        <h2>Second Ad</h2>
+        <img src="https://placekitten.com/321/200" alt="cat ad two">
+        <p>Buy two chrome whiskers, get one tail free.</p>
+    </div>
+
+    <footer id="footer_id">
+        <hr>
+        <p>Author: Veronika</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

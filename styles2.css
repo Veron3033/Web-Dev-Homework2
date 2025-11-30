@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3E719;
+}
+
+/* -------------------------------------
+   GRID LAYOUT (named areas)
+-------------------------------------- */
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "ad1"
+        "footer";
+}
+
+/* Areas */
+header { grid-area: header; }
+main { grid-area: main; }
+.sidebar { grid-area: sidebar; }
+.ad-primary { grid-area: ad1; }
+footer { grid-area: footer; }
+
+/* -------------------------------------
+   BASE STYLES
+-------------------------------------- */
+nav a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #161616;
+    background: #F3E719;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+h1, h2 {
+    color: #F3E719;
+    background-color: #161616;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #161616;
+}
+
+p {
+    color: #F3E719;
+    background-color: #20404B;
+    border: 5px solid #F3E719;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.content-box {
+    background-color: #20404B;
+    border: 5px solid #F3E719;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    padding: 15px;
+    background: #20404B;
+    border: 5px solid #161616;
+    border-radius: 15px;
+}
+
+.ad {
+    text-align: center;
+    background: #161616;
+    border: 5px solid #F3E719;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.ad img {
+    width: 100%;
+    max-width: 320px;
+}
+
+/* Second ad is hidden on mobile */
+.ad-secondary {
+    display: none;
+}
+
+/* -------------------------------------
+   TABLET BREAKPOINT ≥ 576px
+-------------------------------------- */
+@media (min-width: 576px) {
+    .grid-wrapper {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main sidebar"
+            "ad1 ad1"
+            "footer footer";
+    }
+}
+
+/* -------------------------------------
+   DESKTOP BREAKPOINT ≥ 992px
+-------------------------------------- */
+@media (min-width: 992px) {
+    .grid-wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "sidebar main ad1"
+            "sidebar main ad2"
+            "footer footer footer";
+    }
+
+    .ad-secondary {
+        display: block;
+    }
+}
