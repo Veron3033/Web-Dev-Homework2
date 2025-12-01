@@ -6,7 +6,7 @@ body{
     background-color: #F3E719;
 }
 
-/* GRID LAYOUT */
+/* Grid layout */
 .grid-wrapper {
     display: grid;
     gap: 20px;
@@ -31,6 +31,19 @@ footer { grid-area: footer; }
 nav a {
     color: #161616;
     text-decoration: none;
+}
+
+.btn {
+    color: #161616;
+    background: #F3E719;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 h1 {
