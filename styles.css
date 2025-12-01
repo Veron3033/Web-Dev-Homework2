@@ -16,7 +16,7 @@ body{
         "header"
         "main"
         "sidebar"
-        "list"
+        "ad2"
         "footer";
 }
 
@@ -24,9 +24,8 @@ body{
 header { grid-area: header; }
 main { grid-area: main; }
 .sidebar { grid-area: sidebar; }
-.list { grid-area: list; }
+.ad2 { grid-area: ad2; }
 footer { grid-area: footer; }
-
 
 
 nav a {
@@ -55,18 +54,6 @@ p{
     border: 5px solid #F3E719;
     padding: 20px;
     border-radius: 15px;
-}
-.container {
-    color: #F3E719;
-    background-color: #20404B;
-    border: 5px solid #F3E719;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
 }
 
 .content-box {
@@ -121,7 +108,7 @@ p{
     }
 }
 
-/*Desctop ≥ 768px*/
+/*Desctop ≥ 992px*/
 @media (min-width: 992px) {
     .grid-wrapper {
         grid-template-columns: 1fr 2fr 1fr;
