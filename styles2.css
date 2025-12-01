@@ -37,7 +37,7 @@ nav a {
     text-decoration: none;
 }
 
-.btn {
+.btn { /*not added*/
     color: #161616;
     background: #F3E719;
     padding: 10px 15px;
@@ -45,7 +45,7 @@ nav a {
     transition: 0.2s ease;
 }
 
-.btn:hover {
+.btn:hover { /*not added*/
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }

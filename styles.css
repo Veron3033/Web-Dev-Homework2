@@ -4,15 +4,36 @@ body{
     margin: 0;
     padding: 0;
     background-color: #F3E719;
-
-
-    
 }
+
+/* GRID LAYOUT */
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "list"
+        "footer";
+}
+
+/* Areas */
+header { grid-area: header; }
+main { grid-area: main; }
+.sidebar { grid-area: sidebar; }
+.list { grid-area: list; }
+footer { grid-area: footer; }
+
+
+
 nav a {
     color: #161616;
     text-decoration: none;
-    margin: 0 15px;
 }
+
 h1 {
             color: #F3E719;
             background-color: #161616;
@@ -46,4 +67,67 @@ p{
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
+}
+
+.content-box {
+    background-color: #20404B;
+    border: 5px solid #F3E719;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.article {
+    color: #F3E719;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    padding: 15px;
+    background: #20404B;
+    border: 5px solid #161616;
+    border-radius: 15px;
+}
+
+.ad {
+    text-align: center;
+    background: #161616;
+    border: 5px solid #F3E719;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.ad img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.ad2{
+    color: #161616 ;
+    text-align: left;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/*Tablet >= 576px*/
+@media (min-width: 576px) {
+    .grid-wrapper {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main sidebar"
+            "ad ad"
+            "ad2 ad2"
+            "footer footer";
+    }
+}
+
+/*Desctop ≥ 768px*/
+@media (min-width: 992px) {
+    .grid-wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "sidebar main ad2"
+            "footer footer footer";
+    }
 }
